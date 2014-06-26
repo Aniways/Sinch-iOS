@@ -1,9 +1,11 @@
 #import "AppDelegate.h"
 #import "AppDelegate+UI.h"
+#import <Aniways/AWInit.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [AWInit initAniwaysWithAppId:@"SinchIM-Demo"];
   [self addSplashView];
   return YES;
 }

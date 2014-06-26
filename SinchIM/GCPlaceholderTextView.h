@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Aniways/AWTextView.h>
 
 
-@interface GCPlaceholderTextView : UITextView 
+@interface GCPlaceholderTextView : AWTextView
 
 @property(nonatomic, strong) NSString *placeholder;
 
