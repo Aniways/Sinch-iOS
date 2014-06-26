@@ -21,6 +21,17 @@ typedef NS_ENUM(int, MessageDirection) { Incoming, Outgoing, };
   [self.client messageClient].delegate = self;
 }
 
+- (IBAction)didPressOnSmileyButton:(id)sender {
+    if(self.smileyButton.tag == 0){
+        [self.smileyButton setImage:[UIImage imageNamed:@"keyboard_icon_button.png"] forState:UIControlStateNormal];
+        self.smileyButton.tag = 1;
+    }
+    else{
+        [self.smileyButton setImage:[UIImage imageNamed:@"smiley_icons_button.png"] forState:UIControlStateNormal];
+        self.smileyButton.tag = 0;
+    }
+}
+
 - (void)sendButtonPressed:(id)sender {
 
   NSString *destination = self.destination.text;

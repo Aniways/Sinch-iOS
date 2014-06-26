@@ -19,6 +19,7 @@
   self.messageView.delegate = self;
 
   self.message.placeholder = @"Message";
+  self.smileyButton.textview = self.message;
     
   // Remove separator lines in table view
   self.messageView.separatorStyle = UITableViewCellSeparatorStyleNone;

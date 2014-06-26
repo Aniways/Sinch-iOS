@@ -42,7 +42,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qht-V4-r9h" customClass="GCPlaceholderTextView">
-                                        <rect key="frame" x="9" y="7" width="231" height="37"/>
+                                        <rect key="frame" x="44" y="7" width="196" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -59,6 +59,16 @@
                                         </state>
                                         <connections>
                                             <action selector="sendButtonPressed:" destination="2" eventType="touchUpInside" id="4yb-kA-MT3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDG-jG-fkl" customClass="AWIconOnDemandButton">
+                                        <rect key="frame" x="0.0" y="6" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="smiley_icons_button.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressOnSmileyButton:" destination="2" eventType="touchUpInside" id="qrl-4w-DrB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -109,6 +119,7 @@
                         <outlet property="destination" destination="6WI-yX-o48" id="tn4-PW-tr5"/>
                         <outlet property="message" destination="qht-V4-r9h" id="DHj-Hd-kCg"/>
                         <outlet property="messageView" destination="SR6-Yt-2TA" id="q0U-iQ-ziy"/>
+                        <outlet property="smileyButton" destination="nDG-jG-fkl" id="m87-WN-2vc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -208,6 +219,7 @@
         <image name="logo-297x142.png" width="148" height="71"/>
         <image name="send_button_normal.png" width="67" height="37"/>
         <image name="send_button_pressed.png" width="67" height="37"/>
+        <image name="smiley_icons_button.png" width="40" height="40"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
