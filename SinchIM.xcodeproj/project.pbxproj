@@ -26,6 +26,7 @@
 		90E90729187D530100E1E98F /* OutgoingMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E90726187D530100E1E98F /* OutgoingMessageCell.xib */; };
 		90FD14101863182C0075C90E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FD140F1863182C0075C90E /* Images.xcassets */; };
 		94077AD6195C37F900B202E7 /* Sinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94077AD5195C37F900B202E7 /* Sinch.framework */; };
+		94077AD9195C3D5700B202E7 /* GCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94077AD8195C3D5700B202E7 /* GCPlaceholderTextView.m */; };
 		CF04B59817BBD35F00026D30 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF04B59717BBD35F00026D30 /* libsqlite3.dylib */; };
 		CF0C0BAD1668C5CF00ABA260 /* AppDelegate+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0C0BAC1668C5CF00ABA260 /* AppDelegate+UI.m */; };
 		CF2B327A1664EF6A0024D977 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2B32791664EF6A0024D977 /* UIKit.framework */; };
@@ -37,7 +38,6 @@
 		CF534B6B166F827400B384DA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF534B67166F823C00B384DA /* SystemConfiguration.framework */; };
 		CF742B6C16681EE400D9897B /* MainViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = CF742B6B16681EE400D9897B /* MainViewController+UI.m */; };
 		CF816CCB166D5FF400FEF7D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF816CCA166D5FF400FEF7D2 /* CoreGraphics.framework */; };
-		CFC738A61918D386000D466A /* PaddedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC738A51918D386000D466A /* PaddedTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +62,8 @@
 		90E90726187D530100E1E98F /* OutgoingMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OutgoingMessageCell.xib; path = SinchIM/OutgoingMessageCell.xib; sourceTree = "<group>"; };
 		90FD140F1863182C0075C90E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SinchIM/Images.xcassets; sourceTree = "<group>"; };
 		94077AD5195C37F900B202E7 /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sinch.framework; sourceTree = "<group>"; };
+		94077AD7195C3D5700B202E7 /* GCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCPlaceholderTextView.h; path = SinchIM/GCPlaceholderTextView.h; sourceTree = "<group>"; };
+		94077AD8195C3D5700B202E7 /* GCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCPlaceholderTextView.m; path = SinchIM/GCPlaceholderTextView.m; sourceTree = "<group>"; };
 		CF04B59717BBD35F00026D30 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CF0C0BAB1668C5CF00ABA260 /* AppDelegate+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+UI.h"; path = "SinchIM/AppDelegate+UI.h"; sourceTree = "<group>"; };
 		CF0C0BAC1668C5CF00ABA260 /* AppDelegate+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+UI.m"; path = "SinchIM/AppDelegate+UI.m"; sourceTree = "<group>"; };
@@ -80,8 +82,6 @@
 		CF534B69166F825B00B384DA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CF742B6B16681EE400D9897B /* MainViewController+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MainViewController+UI.m"; path = "SinchIM/MainViewController+UI.m"; sourceTree = "<group>"; };
 		CF816CCA166D5FF400FEF7D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CFC738A41918D386000D466A /* PaddedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaddedTextField.h; path = SinchIM/PaddedTextField.h; sourceTree = "<group>"; };
-		CFC738A51918D386000D466A /* PaddedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaddedTextField.m; path = SinchIM/PaddedTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,8 +204,8 @@
 				CF742B6B16681EE400D9897B /* MainViewController+UI.m */,
 				CF0C0BAB1668C5CF00ABA260 /* AppDelegate+UI.h */,
 				CF0C0BAC1668C5CF00ABA260 /* AppDelegate+UI.m */,
-				CFC738A41918D386000D466A /* PaddedTextField.h */,
-				CFC738A51918D386000D466A /* PaddedTextField.m */,
+				94077AD7195C3D5700B202E7 /* GCPlaceholderTextView.h */,
+				94077AD8195C3D5700B202E7 /* GCPlaceholderTextView.m */,
 			);
 			name = "UI extras";
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 				9008EEBA1910CE6600753FA8 /* LoginViewController.m in Sources */,
 				906933741861FE470036DB57 /* main.m in Sources */,
 				CF0C0BAD1668C5CF00ABA260 /* AppDelegate+UI.m in Sources */,
-				CFC738A61918D386000D466A /* PaddedTextField.m in Sources */,
+				94077AD9195C3D5700B202E7 /* GCPlaceholderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,6 +33,9 @@ typedef NS_ENUM(int, MessageDirection) { Incoming, Outgoing, };
   SINOutgoingMessage *message = [SINOutgoingMessage messageWithRecipient:destination text:text];
 
   [[self.client messageClient] sendMessage:message];
+  
+    //clean textview
+    self.message.text = nil;
 }
 
 #pragma mark - SINMessageClientDelegate

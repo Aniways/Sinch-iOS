@@ -6,7 +6,7 @@
 
 // Nothing magic here, just regular code interacting with the iOS SDK.
 
-@interface MainViewController (UIAdjustments) <UITextFieldDelegate>
+@interface MainViewController (UIAdjustments) <UITextFieldDelegate,UITextViewDelegate>
 
 @end
 
@@ -18,6 +18,8 @@
   self.messageView.dataSource = self;
   self.messageView.delegate = self;
 
+  self.message.placeholder = @"Message";
+    
   // Remove separator lines in table view
   self.messageView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
